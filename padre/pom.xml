@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.vmgs.appempresarial</groupId>
+	<artifactId>ModuloPadre</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0</version>
+	<name>Multimodule Padre Module</name>
+	<!--<url>http://maven.apache.org</url>-->
+
+	<properties>
+		
+
+	</properties>
+
+	<modules>
+		<module>ModuloEntidades</module>
+		<module>ModuloRepositorios</module>
+		<module>ModuloServiciosBD</module>
+	</modules>
+
+	<dependencies>
+		<!-- Spring Dependencies -->
+		<!--<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>-->
+	</dependencies>
+
+
+
+	<build>
+		<finalName>multiapp</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+			
+			</plugin>
+			
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+			 <!--<configuration>
+				<scanIntervalSeconds>3</scanIntervalSeconds>
+                <stopPort>9966</stopPort>
+                <stopKey>foo</stopKey>
+             </configuration> -->
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

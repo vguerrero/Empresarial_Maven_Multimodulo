@@ -1,0 +1,26 @@
+1-crear el modulo parent
+2-crear el submodulo entities
+3-crear el modulo de repository y consumir el submodul ent
+
+
+
+producto:
+id 
+nombre 
+precio
+categoria
+cantbod
+
+
+libreria
+mvn archetype:generate -DgroupId=org.vmgs.appempresarial.entidades -DartifactId=ModuloEntidades -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn archetype:generate -DgroupId=org.vmgs.appempresarial.repositorios -DartifactId=ModuloRepositorios -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn archetype:generate -DgroupId=org.vmgs.appempresarial.serviciosBD -DartifactId=ModuloServiciosBD -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+correr desde el padre
+mvn -pl webapp tomcat:run 
+
+correr los test cases
+mvn -Dtest=TestServicioProducto#TestFindAll test
