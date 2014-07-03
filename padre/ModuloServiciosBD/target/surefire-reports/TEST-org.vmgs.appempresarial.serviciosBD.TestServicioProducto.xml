@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="1.479" errors="0" skipped="0" tests="1" name="org.vmgs.appempresarial.serviciosBD.TestServicioProducto">
+<testsuite failures="0" time="1.52" errors="0" skipped="0" tests="1" name="org.vmgs.appempresarial.serviciosBD.TestServicioProducto">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="c:\Program Files\Java\jdk1.7.0_51\jre\bin"/>
@@ -16,7 +16,7 @@
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="test" value="TestServicioProducto#TestFindAll"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="e:\TestMavenProjects\Proyecto Maven Multimodulo\padre\ModuloServiciosBD"/>
+    <property name="user.dir" value="e:\TestMavenProjects\Empresarial_Maven_Multimodulo\padre\ModuloServiciosBD"/>
     <property name="java.runtime.version" value="1.7.0_51-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="c:\Program Files\Java\jdk1.7.0_51\jre\lib\endorsed"/>
@@ -62,5 +62,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="1.479" classname="org.vmgs.appempresarial.serviciosBD.TestServicioProducto" name="TestFindAll"/>
+  <testcase time="1.52" classname="org.vmgs.appempresarial.serviciosBD.TestServicioProducto" name="TestFindAll"/>
 </testsuite>
